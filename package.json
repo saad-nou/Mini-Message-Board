@@ -1,0 +1,23 @@
+{
+  "name": "mini-message-board",
+  "version": "1.0.0",
+  "description": "## objective to learn expressjs, ejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saad-nou/Mini-Message-Board.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saad-nou/Mini-Message-Board/issues"
+  },
+  "homepage": "https://github.com/saad-nou/Mini-Message-Board#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
