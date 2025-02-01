@@ -1,2 +1,5 @@
 # Mini-Message-Board
-to use Express to make some fun interactive web app
+
+## Problem Statement
+https://www.theodinproject.com/lessons/node-path-nodejs-mini-message-board
+
