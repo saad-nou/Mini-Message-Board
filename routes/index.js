@@ -1,7 +1,7 @@
 
-const { router } = require('express');
+const { Router } = require('express');
 
-const indexRouter = router();
+const indexRouter = Router();
 
 const messages = [
     {
@@ -26,6 +26,9 @@ const messages = [
     }
 ];
 
+indexRouter.get("/", (req, res) => {
+    res.json(messages)
+})
 
 
-module.exports = indexRouter;
+module.exports = { indexRouter };
