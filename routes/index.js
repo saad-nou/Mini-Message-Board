@@ -27,7 +27,7 @@ const messages = [
 ];
 
 indexRouter.get("/", (req, res) => {
-    res.json(messages)
+    res.render("index", { messages: messages })
 })
 
 
