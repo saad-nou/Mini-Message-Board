@@ -30,5 +30,14 @@ indexRouter.get("/", (req, res) => {
     res.render("index", { messages: messages })
 })
 
+indexRouter.get("/new", (req, res) => {
+    res.render("form")
+})
+
+indexRouter.post("/new", (req, res) => {
+    messages.push({ user: req.body.user, text: req.body.message, added: new Date(), })
+    if (messages.length > 6) messages.shift();
+    res.redirect("/");
+})
 
 module.exports = { indexRouter };
