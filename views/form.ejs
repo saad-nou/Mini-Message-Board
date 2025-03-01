@@ -9,11 +9,18 @@
 <body>
     <form method="POST" action="/new">
         <label for="name">Username: </label>
-        <input type="text" name="user" id="user" maxlength="10">
+        <input type="text" name="user" id="user" maxlength="10" required>
         <label for="message">message:</label>
         <textarea name="message" id="message" maxlength="50" required></textarea>
         <input type="submit" value="post"/>
      </form> 
+     <% if(locals.errors) {%>
+     <div class="errors">
+        <% errors.map(error => { %>
+            <div><%= error.msg %></div>        
+        <% }) %>
+     </div>
+     <% } %> 
      <a href="../" class="back-link">go back</a>
 </body>
 </html>
